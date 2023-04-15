@@ -14,7 +14,7 @@ namespace TrabajosPracticosSIM
         static void Main()
         {
             //Inicio Controlador TP(Elegir)
-            ControladorTP3.GetInstance().Start();
+            ControladorTP2.GetInstance().Start();
         }
     }
 }

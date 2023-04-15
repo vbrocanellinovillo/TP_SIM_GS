@@ -6,11 +6,11 @@ using TrabajosPracticosSIM.TP_3.Entidades;
 
 namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 {
-    public partial class Frm_TP3_PuntoA : Form
+    public partial class Frm_TP2_PuntoA : Form
     {
         private String distribucionSeleccionada = "";
 
-        public Frm_TP3_PuntoA()
+        public Frm_TP2_PuntoA()
         {
             InitializeComponent();
             pnl_parametros.Visible = false;
@@ -110,7 +110,7 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 
         private void Btn_Continuar_Click(object sender, EventArgs e)
         {
-            ControladorTP3.GetInstance().OpcionPantallaPuntoB();
+            ControladorTP2.GetInstance().OpcionPantallaPuntoB();
         }
 
         private void Btn_Generar_Click(object sender, EventArgs e)
@@ -126,7 +126,7 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
                     case "Uniforme":
                         double a = Convert.ToDouble(tb_a.Text);
                         double b = Convert.ToDouble(tb_b.Text);
-                        ControladorTP3.GetInstance().OpcionGenerarUniforme(cantidad,a,b,this);
+                        ControladorTP2.GetInstance().OpcionGenerarUniforme(cantidad,a,b,this);
                         break;
                     case "Exponencial":
                         double lambda = Convert.ToDouble(tb_lambda.Text);
@@ -134,7 +134,7 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
                         {
                             throw(new Exception("Lambda ingresado no válido"));   
                         }
-                        ControladorTP3.GetInstance().OpcionGenerarExponencial(cantidad, lambda, this);
+                        ControladorTP2.GetInstance().OpcionGenerarExponencial(cantidad, lambda, this);
                         break;
                     case "Poisson":
                         double lambdaPoisson = Convert.ToDouble(tb_lambda.Text);
@@ -142,12 +142,12 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
                         {
                             throw (new Exception("Lambda ingresado no válido"));
                         }
-                        ControladorTP3.GetInstance().OpcionGenerarPoisson(cantidad, lambdaPoisson, this);
+                        ControladorTP2.GetInstance().OpcionGenerarPoisson(cantidad, lambdaPoisson, this);
                         break;
                     case "Normal":
                         double media = Convert.ToDouble(tb_media.Text);
                         double ds = Convert.ToDouble(tb_desviacion_estandar.Text);
-                        ControladorTP3.GetInstance().OpcionGenerarNormal(cantidad, media, ds, this);
+                        ControladorTP2.GetInstance().OpcionGenerarNormal(cantidad, media, ds, this);
                         break;
                     default:
                         break;

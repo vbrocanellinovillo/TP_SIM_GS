@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 {
-    partial class Frm_TP3_PuntoB
+    partial class Frm_TP2_PuntoB
     {
         /// <summary>
         /// Required designer variable.

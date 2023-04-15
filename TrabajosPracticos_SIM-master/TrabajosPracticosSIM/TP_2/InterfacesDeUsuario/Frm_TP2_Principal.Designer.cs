@@ -1,7 +1,7 @@
 ﻿
 namespace TrabajosPracticosSIM
 {
-    partial class Frm_TP3_Principal
+    partial class Frm_TP2_Principal
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,7 @@ namespace TrabajosPracticosSIM
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@ namespace TrabajosPracticosSIM
             // 
             this.Btn_iniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_iniciar.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_iniciar.Location = new System.Drawing.Point(396, 585);
+            this.Btn_iniciar.Location = new System.Drawing.Point(364, 593);
             this.Btn_iniciar.Name = "Btn_iniciar";
             this.Btn_iniciar.Size = new System.Drawing.Size(341, 106);
             this.Btn_iniciar.TabIndex = 0;
@@ -61,7 +62,7 @@ namespace TrabajosPracticosSIM
             this.lbl_universidad.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_universidad.Location = new System.Drawing.Point(411, 177);
             this.lbl_universidad.Name = "lbl_universidad";
-            this.lbl_universidad.Size = new System.Drawing.Size(264, 23);
+            this.lbl_universidad.Size = new System.Drawing.Size(255, 22);
             this.lbl_universidad.TabIndex = 6;
             this.lbl_universidad.Text = "Universidad Tecnologica Nacional";
             // 
@@ -71,7 +72,7 @@ namespace TrabajosPracticosSIM
             this.lbl_facultad.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_facultad.Location = new System.Drawing.Point(434, 214);
             this.lbl_facultad.Name = "lbl_facultad";
-            this.lbl_facultad.Size = new System.Drawing.Size(213, 23);
+            this.lbl_facultad.Size = new System.Drawing.Size(206, 22);
             this.lbl_facultad.TabIndex = 7;
             this.lbl_facultad.Text = "Facultad Regional Córdoba";
             // 
@@ -81,7 +82,7 @@ namespace TrabajosPracticosSIM
             this.label1.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(447, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 23);
+            this.label1.Size = new System.Drawing.Size(173, 22);
             this.label1.TabIndex = 8;
             this.label1.Text = "Cátedra de Simulación";
             // 
@@ -91,7 +92,7 @@ namespace TrabajosPracticosSIM
             this.label2.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(326, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(433, 23);
+            this.label2.Size = new System.Drawing.Size(415, 22);
             this.label2.TabIndex = 9;
             this.label2.Text = "Trabajo Práctico Nro 3: Variables Aleatorias Continuas";
             // 
@@ -101,9 +102,9 @@ namespace TrabajosPracticosSIM
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(76, 369);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 18);
+            this.label3.Size = new System.Drawing.Size(134, 18);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Integrantes Grupo X:";
+            this.label3.Text = "Integrantes Grupo S:";
             // 
             // label4
             // 
@@ -111,9 +112,9 @@ namespace TrabajosPracticosSIM
             this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(256, 405);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(231, 18);
+            this.label4.Size = new System.Drawing.Size(228, 18);
             this.label4.TabIndex = 11;
-            this.label4.Text = "70869 - Valle Ybañez, Matías Agustín ";
+            this.label4.Text = "86278 - Beato Dominguez, Valentina";
             // 
             // label6
             // 
@@ -121,9 +122,9 @@ namespace TrabajosPracticosSIM
             this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(256, 436);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 18);
+            this.label6.Size = new System.Drawing.Size(229, 18);
             this.label6.TabIndex = 13;
-            this.label6.Text = "79412 - Pérez Dubini, Federico ";
+            this.label6.Text = "87030 - Brocanelli Novillo, Valentina";
             // 
             // label7
             // 
@@ -131,9 +132,9 @@ namespace TrabajosPracticosSIM
             this.label7.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(256, 469);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 18);
+            this.label7.Size = new System.Drawing.Size(207, 18);
             this.label7.TabIndex = 14;
-            this.label7.Text = "71915 - Oberti, Francisco";
+            this.label7.Text = "87027 - Hunziker Cadabal, Celina";
             // 
             // label8
             // 
@@ -141,9 +142,9 @@ namespace TrabajosPracticosSIM
             this.label8.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(256, 499);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(218, 18);
+            this.label8.Size = new System.Drawing.Size(170, 18);
             this.label8.TabIndex = 15;
-            this.label8.Text = "67359 - Belbruno, Javier Alejandro";
+            this.label8.Text = "85681 - Rojo Biran, Agustín";
             // 
             // pictureBox1
             // 
@@ -155,12 +156,23 @@ namespace TrabajosPracticosSIM
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(256, 530);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 18);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "81811 - Silvestre, Exequiel";
+            // 
             // Frm_TP3_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1026, 734);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -195,6 +207,7 @@ namespace TrabajosPracticosSIM
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
     }
 }
 

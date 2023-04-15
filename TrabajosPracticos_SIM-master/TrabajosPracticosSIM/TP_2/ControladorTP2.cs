@@ -8,10 +8,10 @@ using TrabajosPracticosSIM.TP_3.InterfacesDeUsuario;
 
 namespace TrabajosPracticosSIM.TP_3
 {
-    public class ControladorTP3 : ApplicationContext
+    public class ControladorTP2 : ApplicationContext
     {
         //Instancia Unica - Patron Singleton
-        private static readonly ControladorTP3 _instance = new ControladorTP3();
+        private static readonly ControladorTP2 _instance = new ControladorTP2();
         //Lista de Vistas / Pantallas que controla el ControladorTP3
         private List<Form> Views = new List<Form>();
 
@@ -39,13 +39,13 @@ namespace TrabajosPracticosSIM.TP_3
 
         
         //Constructor Privado.
-        private ControladorTP3()
+        private ControladorTP2()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
         }
         // Devolver instancia estática única.
-        public static ControladorTP3 GetInstance() { return _instance; }
+        public static ControladorTP2 GetInstance() { return _instance; }
 
         public void Start()
         {
@@ -60,7 +60,7 @@ namespace TrabajosPracticosSIM.TP_3
 
         public void HabilitarPantallaPrincipal()
         {
-            CreateView(new Frm_TP3_Principal());
+            CreateView(new Frm_TP2_Principal());
         }
         //Crear una ventana
         public void CreateView(Form frm)
@@ -109,7 +109,7 @@ namespace TrabajosPracticosSIM.TP_3
             //Remover Pantalla de la lista de Pantallas.
             Views.Remove(sender as Form);
             // NOTE: Terminar programa si no quedan mas Vistas/Forms o si se está cerrando la ventana principal.
-            if (Views.Count == 0 || sender.GetType() == typeof(Frm_TP3_Principal)) Exit();
+            if (Views.Count == 0 || sender.GetType() == typeof(Frm_TP2_Principal)) Exit();
         }
 
         //Finalizar Programa
@@ -122,19 +122,19 @@ namespace TrabajosPracticosSIM.TP_3
         //Crear Pantalla Punto A
         public void OpcionPantallaPuntoA()
         {
-            CreateView(new Frm_TP3_PuntoA());
+            CreateView(new Frm_TP2_PuntoA());
         }
         //Crear Pantalla Punto B
         public void OpcionPantallaPuntoB()
         {
-            Frm_TP3_PuntoB pantalla = new Frm_TP3_PuntoB();
+            Frm_TP2_PuntoB pantalla = new Frm_TP2_PuntoB();
             CreateView(pantalla);
             pantalla.setLabels(distrSeleccionada,parametros,cantidad_var_aleatorias);
             pantalla.MostrarLista(listaVariablesAleatorias);
         }
 
         //Prueba de Frecuenta.
-        public void BtnPrueba_de_Frecuencias(int cant_intervalos, Frm_TP3_PuntoB form)
+        public void BtnPrueba_de_Frecuencias(int cant_intervalos, Frm_TP2_PuntoB form)
         {
             this.cant_intervalos = cant_intervalos;
             EFG = new EstructuraFrecuencias_General(distrSeleccionada,listaVariablesAleatorias
@@ -169,7 +169,7 @@ namespace TrabajosPracticosSIM.TP_3
 
         
 
-        public void OpcionGenerarUniforme(int cantidad, double a, double b, Frm_TP3_PuntoA form)
+        public void OpcionGenerarUniforme(int cantidad, double a, double b, Frm_TP2_PuntoA form)
         {
 
             //Lleno info que se va a usar en pantalla B
@@ -190,7 +190,7 @@ namespace TrabajosPracticosSIM.TP_3
             //Pasar a la Pantalla para que muestre
             form.MostrarLista(listaVariablesAleatorias);
         }
-        public void OpcionGenerarExponencial(int cantidad, double lambda, Frm_TP3_PuntoA form)
+        public void OpcionGenerarExponencial(int cantidad, double lambda, Frm_TP2_PuntoA form)
         {
 
             //Lleno info que se va a usar en pantalla B
@@ -210,7 +210,7 @@ namespace TrabajosPracticosSIM.TP_3
             //Pasar a la Pantalla para que muestre
             form.MostrarLista(listaVariablesAleatorias);
         }
-        public void OpcionGenerarPoisson(int cantidad, double lambda, Frm_TP3_PuntoA form)
+        public void OpcionGenerarPoisson(int cantidad, double lambda, Frm_TP2_PuntoA form)
         {
             //Lleno info que se va a usar en pantalla B
             this.lambda = lambda;
@@ -233,7 +233,7 @@ namespace TrabajosPracticosSIM.TP_3
             //Pasar a la Pantalla para que muestre
             form.MostrarLista(listaVariablesAleatorias);
         }
-        public void OpcionGenerarNormal(int cantidad, double media, double ds, Frm_TP3_PuntoA form)
+        public void OpcionGenerarNormal(int cantidad, double media, double ds, Frm_TP2_PuntoA form)
         {
             //Lleno info que se va a usar en pantalla B
             this.media = media;
@@ -258,9 +258,9 @@ namespace TrabajosPracticosSIM.TP_3
             form.MostrarLista(listaVariablesAleatorias);
         }
 
-        public void Btn_Chi_Cuadrado(double significancia_alfa, Frm_TP3_PuntoB frm_TP3_PuntoB)
+        public void Btn_Chi_Cuadrado(double significancia_alfa, Frm_TP2_PuntoB frm_TP3_PuntoB)
         {
-            Frm_TP3_PuntoB_ChiCuadrado pantalla = new Frm_TP3_PuntoB_ChiCuadrado();
+            Frm_TP2_PuntoB_ChiCuadrado pantalla = new Frm_TP2_PuntoB_ChiCuadrado();
             CreateView(pantalla);
 
             double chi_calculado = EFG.getChi_cuadrado();
@@ -275,7 +275,7 @@ namespace TrabajosPracticosSIM.TP_3
 
         public void Btn_Probabilidades_Poisson()
         {
-            Frm_TP3_PuntoB_ProbPoisson pantalla = new Frm_TP3_PuntoB_ProbPoisson();
+            Frm_TP2_PuntoB_ProbPoisson pantalla = new Frm_TP2_PuntoB_ProbPoisson();
             ReplaceView(pantalla);
             pantalla.LlenarTabla(funcDeDistrib, probAcumuladas);
         }

@@ -2,9 +2,9 @@
 
 namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 {
-    public partial class Frm_TP3_PuntoB_ChiCuadrado : Form
+    public partial class Frm_TP2_PuntoB_ChiCuadrado : Form
     {
-        public Frm_TP3_PuntoB_ChiCuadrado()
+        public Frm_TP2_PuntoB_ChiCuadrado()
         {
             InitializeComponent();
             Iniciar();

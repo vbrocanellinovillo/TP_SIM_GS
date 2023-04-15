@@ -4,9 +4,9 @@ using TrabajosPracticosSIM.TP_3;
 
 namespace TrabajosPracticosSIM
 {
-    public partial class Frm_TP3_Principal : Form
+    public partial class Frm_TP2_Principal : Form
     {
-        public Frm_TP3_Principal()
+        public Frm_TP2_Principal()
         {
             InitializeComponent();
         }
@@ -14,8 +14,7 @@ namespace TrabajosPracticosSIM
         //Inicio Caso de Uso Punto A 
         private void Btn_Iniciar_Click(object sender, EventArgs e)
         {
-            ControladorTP3.GetInstance().OpcionPantallaPuntoA();
+            ControladorTP2.GetInstance().OpcionPantallaPuntoA();
         }
-
     }
 }

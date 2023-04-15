@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 {
-    public partial class Frm_TP3_PuntoB_ProbPoisson : Form
+    public partial class Frm_TP2_PuntoB_ProbPoisson : Form
     {
-        public Frm_TP3_PuntoB_ProbPoisson()
+        public Frm_TP2_PuntoB_ProbPoisson()
         {
             InitializeComponent();
         }

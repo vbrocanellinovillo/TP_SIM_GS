@@ -90,43 +90,43 @@
     <Compile Include="TP_1\InterfacesDeUsuario\PantallaPruebaDeFrecuencia.Designer.cs">
       <DependentUpon>PantallaPruebaDeFrecuencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="TP_3\ControladorTP3.cs" />
-    <Compile Include="TP_3\Entidades\EstructuraFrecuencias_Definitiva.cs" />
-    <Compile Include="TP_3\Entidades\GeneradorAleatoriasExponencial.cs" />
-    <Compile Include="TP_3\Entidades\GeneradorAleatoriasNormal.cs" />
-    <Compile Include="TP_3\Entidades\GeneradorAleatoriasPoisson.cs" />
-    <Compile Include="TP_3\Entidades\GeneradorAleatoriasUniforme.cs" />
-    <Compile Include="TP_3\Entidades\PruebaDeChi.cs" />
-    <Compile Include="TP_3\Entidades\Random_VarAleatoria.cs" />
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_Principal.cs">
+    <Compile Include="TP_2\ControladorTP2.cs" />
+    <Compile Include="TP_2\Entidades\EstructuraFrecuencias_Definitiva.cs" />
+    <Compile Include="TP_2\Entidades\GeneradorAleatoriasExponencial.cs" />
+    <Compile Include="TP_2\Entidades\GeneradorAleatoriasNormal.cs" />
+    <Compile Include="TP_2\Entidades\GeneradorAleatoriasPoisson.cs" />
+    <Compile Include="TP_2\Entidades\GeneradorAleatoriasUniforme.cs" />
+    <Compile Include="TP_2\Entidades\PruebaDeChi.cs" />
+    <Compile Include="TP_2\Entidades\Random_VarAleatoria.cs" />
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_Principal.Designer.cs">
-      <DependentUpon>Frm_TP3_Principal.cs</DependentUpon>
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_Principal.Designer.cs">
+      <DependentUpon>Frm_TP2_Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoA.cs">
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoA.Designer.cs">
-      <DependentUpon>Frm_TP3_PuntoA.cs</DependentUpon>
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoA.Designer.cs">
+      <DependentUpon>Frm_TP2_PuntoA.cs</DependentUpon>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB_ChiCuadrado.cs">
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB_ChiCuadrado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB_ChiCuadrado.Designer.cs">
-      <DependentUpon>Frm_TP3_PuntoB_ChiCuadrado.cs</DependentUpon>
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB_ChiCuadrado.Designer.cs">
+      <DependentUpon>Frm_TP2_PuntoB_ChiCuadrado.cs</DependentUpon>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB.cs">
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB.Designer.cs">
-      <DependentUpon>Frm_TP3_PuntoB.cs</DependentUpon>
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB.Designer.cs">
+      <DependentUpon>Frm_TP2_PuntoB.cs</DependentUpon>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB_ProbPoisson.cs">
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB_ProbPoisson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB_ProbPoisson.Designer.cs">
-      <DependentUpon>Frm_TP3_PuntoB_ProbPoisson.cs</DependentUpon>
+    <Compile Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB_ProbPoisson.Designer.cs">
+      <DependentUpon>Frm_TP2_PuntoB_ProbPoisson.cs</DependentUpon>
     </Compile>
     <Compile Include="TP_4\ControladorTP4.cs" />
     <Compile Include="TP_4\Entidades\Actividad.cs" />
@@ -314,20 +314,20 @@
     <EmbeddedResource Include="TP_1\InterfacesDeUsuario\PantallaPruebaDeFrecuencia.resx">
       <DependentUpon>PantallaPruebaDeFrecuencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TP_3\InterfacesDeUsuario\Frm_TP3_Principal.resx">
-      <DependentUpon>Frm_TP3_Principal.cs</DependentUpon>
+    <EmbeddedResource Include="TP_2\InterfacesDeUsuario\Frm_TP2_Principal.resx">
+      <DependentUpon>Frm_TP2_Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoA.resx">
-      <DependentUpon>Frm_TP3_PuntoA.cs</DependentUpon>
+    <EmbeddedResource Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoA.resx">
+      <DependentUpon>Frm_TP2_PuntoA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB_ChiCuadrado.resx">
-      <DependentUpon>Frm_TP3_PuntoB_ChiCuadrado.cs</DependentUpon>
+    <EmbeddedResource Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB_ChiCuadrado.resx">
+      <DependentUpon>Frm_TP2_PuntoB_ChiCuadrado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB.resx">
-      <DependentUpon>Frm_TP3_PuntoB.cs</DependentUpon>
+    <EmbeddedResource Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB.resx">
+      <DependentUpon>Frm_TP2_PuntoB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TP_3\InterfacesDeUsuario\Frm_TP3_PuntoB_ProbPoisson.resx">
-      <DependentUpon>Frm_TP3_PuntoB_ProbPoisson.cs</DependentUpon>
+    <EmbeddedResource Include="TP_2\InterfacesDeUsuario\Frm_TP2_PuntoB_ProbPoisson.resx">
+      <DependentUpon>Frm_TP2_PuntoB_ProbPoisson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TP_4\InterfacesDeUsuario\Frm_TP4_Configuracion.resx">
       <DependentUpon>Frm_TP4_Configuracion.cs</DependentUpon>

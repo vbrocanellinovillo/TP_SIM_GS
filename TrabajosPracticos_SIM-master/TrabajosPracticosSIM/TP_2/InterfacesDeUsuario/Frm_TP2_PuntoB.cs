@@ -11,14 +11,14 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 {
-    public partial class Frm_TP3_PuntoB : Form
+    public partial class Frm_TP2_PuntoB : Form
     {
 
         private int cantIntervs;
         private SortedDictionary<double, Subintervalo> estructuraFrecObservada;
         private SortedDictionary<int, Random_VarAleatoria> lista;
 
-        public Frm_TP3_PuntoB()
+        public Frm_TP2_PuntoB()
         {
             InitializeComponent();
             Iniciar();
@@ -205,7 +205,7 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
             try
             {
                 int cant_intervalos = Convert.ToInt32(tb_cantInterv.Text);
-                ControladorTP3.GetInstance().BtnPrueba_de_Frecuencias(cant_intervalos,this);
+                ControladorTP2.GetInstance().BtnPrueba_de_Frecuencias(cant_intervalos,this);
                 pnl_Grafico.Visible = true;
                 pnl_x2.Visible = true;
             }
@@ -222,7 +222,7 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 
         private void Btn_Probabilidades_Click(object sender, EventArgs e)
         {
-            ControladorTP3.GetInstance().Btn_Probabilidades_Poisson();
+            ControladorTP2.GetInstance().Btn_Probabilidades_Poisson();
         }
 
         private void Btn_Chi_Cuadrado_Click(object sender, EventArgs e)
@@ -230,7 +230,7 @@ namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
             try
             {
                 double significancia_alfa = Convert.ToDouble(tb_significancia_alfa.Text);
-                ControladorTP3.GetInstance().Btn_Chi_Cuadrado(significancia_alfa, this);
+                ControladorTP2.GetInstance().Btn_Chi_Cuadrado(significancia_alfa, this);
             }
             catch (Exception ex)
             {

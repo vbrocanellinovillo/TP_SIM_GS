@@ -57,14 +57,14 @@ namespace TrabajosPracticosSIM.TP_3.Entidades
                 case "Uniforme":
                     return cant_numeros / (double)cant_intervalos;
                 case "Exponencial":
-                    double lambda = ControladorTP3.GetInstance().getLambda();
+                    double lambda = ControladorTP2.GetInstance().getLambda();
                     double prob_en_intervaloExp = Exponential.CDF(lambda, limite_sup) - Exponential.CDF(lambda, limite_inf);
                     return prob_en_intervaloExp * cant_numeros; 
                 case "Poisson":
                     return getFEPoisson(limite_inf,limite_sup);
                 case "Normal":
-                    double media = ControladorTP3.GetInstance().getMedia();
-                    double ds = ControladorTP3.GetInstance().getDS();
+                    double media = ControladorTP2.GetInstance().getMedia();
+                    double ds = ControladorTP2.GetInstance().getDS();
                     double prob_en_intervalo = Normal.CDF(media,ds, limite_sup) - Normal.CDF(media, ds, limite_inf);
                     return prob_en_intervalo * cant_numeros;
                 default:
@@ -75,8 +75,8 @@ namespace TrabajosPracticosSIM.TP_3.Entidades
 
         private double getFEPoisson(double limite_inf, double limite_sup)
         {
-            ArrayList prob = ControladorTP3.GetInstance().getFuncDeDistribPoisson(); 
-            ArrayList probAcum = ControladorTP3.GetInstance().getFuncDeDistribPoissonAcum();
+            ArrayList prob = ControladorTP2.GetInstance().getFuncDeDistribPoisson(); 
+            ArrayList probAcum = ControladorTP2.GetInstance().getFuncDeDistribPoissonAcum();
             double FEPoissonintervalo = 0.0;
             for (int i = 0; i < probAcum.Count; i++)
             {

@@ -1,7 +1,7 @@
 ﻿
 namespace TrabajosPracticosSIM.TP_3.InterfacesDeUsuario
 {
-    partial class Frm_TP3_PuntoB_ChiCuadrado
+    partial class Frm_TP2_PuntoB_ChiCuadrado
     {
         /// <summary>
         /// Required designer variable.
